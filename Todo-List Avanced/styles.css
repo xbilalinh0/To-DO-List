@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Modak&family=Pixelify+Sans:wght@400..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background: linear-gradient(135deg, #fdbb06, #ec3700);
+}
+.todo-list {
+    width: 90%;
+    max-width: 480px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.todo-list h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Lilita One", sans-serif;
+}
+#todo-form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#todo-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #fda706;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+#todo-form button {
+    padding: 12px 25px;
+    background-color: #fda706;
+    color: white;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#todo-form button:hover {
+    background-color: #faae21;
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+    font-family: "Pixelify Sans", sans-serif;
+}
+#todo-form ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+}
+#todo-ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    justify-content: space-between;
+}
+#todo-ul li {
+    list-style: none;
+    background-color: #c0bfbf;
+    padding: 12px 20px;
+    border-radius: 5px 0px 0px 5px;
+    width: 85%;
+}
+#todo-ul button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none;
+    border: none;
+    background-color: #333;
+    cursor: pointer;
+    color: white;
+    padding: 14px 15px;
+    border-radius: 0px 5px 5px 0px;
+}
